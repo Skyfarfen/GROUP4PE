@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP 4</title>
+    <link rel="stylesheet" href="PE.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="topbar" aria-label="Main navigation">
+        <img class="nav-image" src="Fluttershy.png" alt="Fluttershy">
+        <div class="title-block">
+            <p class="eyebrow">Physical Education</p>
+            <h1>PE Reporting Group 4</h1>
+            <p class="class-label">BSSTAT 1 <span aria-hidden="true">&middot;</span> Team presentation</p>
+        </div>
+        <img class="nav-image2" src="Flutter2.png" alt="Fluttershy">
+    </nav>
+</header>
+
+<main class="page-content">
+    <section class="welcome-panel" aria-labelledby="welcome-title">
+        <p class="section-kicker">Welcome to our presentation</p>
+        <h2 id="welcome-title">Move with purpose.<br><span>Learn with Group 4!</span></h2>
+        <p class="welcome-copy">Explore our PE report through this website made by yours truly.</p>
+    </section>
+
+    <section class="report-panel" aria-label="Report content">
+        <div class="panel-heading">
+            <div>
+                <p class="section-kicker">Next Step</p>
+                <h2>Ready when you are</h2>
+            </div>
+            <span class="panel-mark" aria-hidden="true">04</span>
+        </div>
+        <div class="panel-line"></div>
+        <p class="panel-placeholder">But first, let's get movin!</p>
+        <button class="fluttershy-button" type="button">
+            <span class="button-flower" aria-hidden="true">✿</span>
+            <span>ZUMBA DANCE!!!</span>
+            <span class="button-arrow" aria-hidden="true">&#8594;</span>
+        </button>
+    </section>
+</main>
+
+<main class="topic-screen" id="topicScreen" aria-labelledby="topicsTitle" hidden>
+    <div class="topic-decor topic-decor-left" aria-hidden="true">✿</div>
+    <div class="topic-decor topic-decor-upper-right" aria-hidden="true">❀</div>
+    <div class="topic-decor topic-decor-lower-left" aria-hidden="true">✿</div>
+    <div class="topic-decor topic-decor-lower-right" aria-hidden="true">❁</div>
+    <div class="topic-decor topic-flower-top-center" aria-hidden="true">❀</div>
+    <div class="topic-decor topic-flower-middle-left" aria-hidden="true">❁</div>
+    <div class="topic-decor topic-flower-middle-right" aria-hidden="true">✿</div>
+    <div class="topic-decor topic-flower-bottom-center" aria-hidden="true">❀</div>
+    <div class="topic-screen-heading">
+        <p class="section-kicker">Choose a topic</p>
+        <h2 id="topicsTitle">Topic Garden</h2>
+        <p>Please tap the topic that is currently being discussed</p>
+    </div>
+
+    <div class="topic-grid">
+        <button class="topic-card" type="button" data-deck="topic1" data-pdf="Topic 1.pdf">
+            <img class="topic-image" src="AFCE.png" alt="Aerobics for Cardiorespiratory Endurance">
+            <span>Aerobics for Cardiorespiratory Endurance</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="dan">
+            <img class="topic-image" src="DAN.png" alt="Definition and Nature">
+            <span>Definition and Nature</span>
+        </button>
+                <button class="topic-card" type="button" data-deck="topic3" data-pdf="AVSA.pdf">
+            <img class="topic-image" src="AVSA.png" alt="Comparison Between Aerobic and Anaerobic Exercise">
+            <span>Comparison Between Aerobic and Anaerobic Exercise</span>
+        </button>
+                <button class="topic-card" type="button" data-deck="topic4" data-pdf="CTAA.pdf">
+            <img class="topic-image" src="CTAA.png" alt="Common Types of Aerobic Activities">
+            <span>Common Types of Aerobic Activities</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="topic5" data-pdf="Topic 5.pdf">
+            <img class="topic-image" src="HFA.png" alt="Health and Fitness Advantages of Aerobic Exercise">
+            <span>Health and Fitness Advantages of Aerobic Exercise</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="PRP" data-pdf="PRP.pdf">
+            <img class="topic-image" src="PRP.png" alt="Potential Risks and Precautions">
+            <span>Potential Risks and Precautions</span>
+        </button>
+                <button class="topic-card" type="button" data-deck="topic7" data-pdf="Topic 7.pdf">
+            <img class="topic-image" src="SG.png" alt="Safety Guidelines">
+            <span>Safety Guidelines</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="topic8" data-pdf="FRQ.pdf">
+            <img class="topic-image" src="FRQ.png" alt="Frequency">
+            <span>Frequency</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="topic9" data-pdf="Topic 9.pdf">
+            <img class="topic-image" src="BSAT.png" alt="Basic Steps and Techniques">
+            <span>Basic Steps and Techniques</span>
+        </button>
+        <button class="topic-card" type="button" data-deck="mhr" data-pdf="MHR.pdf">
+            <img class="topic-image" src="MHR.png" alt="Monitoring Heartrate">
+            <span>Monitoring Heartrate</span>
+        </button>
+    </div>
+
+    <div class="prize-launch-wrap">
+        <button class="prize-launch-button" id="openPrizeGame" type="button">
+            <span aria-hidden="true">🎁</span>
+            <span>Prize Game</span>
+            <span aria-hidden="true">✿</span>
+        </button>
+        <p class="prize-launch-hint">Tap if you answered a question. 🌸</p>
+    </div>
+</main>
+
+<div class="deck-modal" id="prizeGameDeck" aria-hidden="true">
+    <div class="deck-content prize-game-content" role="dialog" aria-modal="true" aria-labelledby="prizeGameTitle">
+        <button class="close-modal" id="closePrizeGame" type="button" aria-label="Close prize game">&times;</button>
+        <div class="deck-heading prize-heading">
+            <p class="section-kicker"> THE SGGM </p>
+            <h2 id="prizeGameTitle">Secret Garden Gambling Machine</h2>
+            <p>Spin for a chance to win 60pesos</p>
+        </div>
+
+        <div class="slot-machine" aria-live="polite">
+            <div class="slot-reel" id="slotReel1"><img src="mentos.png" class="prize-image" alt="mentos"></div>
+            <div class="slot-reel" id="slotReel2"><img src="20peso.png" class="prize-image" alt="20peso"></div>
+            <div class="slot-reel" id="slotReel3"><img src="10peso.png" class="prize-image" alt="10peso"></div>
+        </div>
+
+        <div class="slot-result" id="slotResult">Ready to spin? 🌷</div>
+
+        <button class="deck-button prize-spin-button" id="spinPrize" type="button">🎰 SPIN FOR PRIZE</button>
+        <p class="prize-note" id="prizeNote">One Try Only!</p>
+    </div>
+</div>
+
+<div class="video-modal" id="videoModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-modal" id="closeModal" type="button" aria-label="Close">
+            &times;
+        </button>
+
+        <h2 id="modalTitle">ZUMBA DANCE!!!</h2>
+
+        <video controls>
+            <source src="Zumba.mp4" type="video/mp4">
+        </video>
+
+        <button class="continue-button" id="continueButton" type="button">
+            Continue
+        </button>
+    </div>
+</div>
+
+<div class="report-modal" id="reportModal" aria-hidden="true">
+    <div class="report-modal-content" role="dialog" aria-modal="true" aria-labelledby="reportModalTitle">
+        <button class="close-modal" id="closeReportModal" type="button" aria-label="Close report">
+            &times;
+        </button>
+        <h2 id="reportModalTitle">PE Report</h2>
+        <iframe id="reportFrame" title="PE report"></iframe>
+    </div>
+</div>
+
+<div class="deck-modal" id="mhrDeck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="deckTitle">
+        <button class="close-modal" id="closeDeck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 10</p>
+            <h2 id="deckTitle">Monitoring Heartrate</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide is-active">
+                <span class="slide-number">01</span>
+                <p class="slide-kicker">Monitoring Heartrate</p>
+                <h3>Know your rhythm.<br><span>Move with care.</span></h3>
+                <p>Heart-rate monitoring helps you understand how hard your body is working during exercise.</p>
+                <div class="pulse-mark" aria-hidden="true">♥</div>
+            </section>
+            <section class="deck-slide">
+                <span class="slide-number">02</span>
+                <p class="slide-kicker">Why it matters</p>
+                <h3>Find your exercise intensity.</h3>
+                <p>Your heart rate gives you feedback while you exercise. It can help you build endurance without pushing beyond your current fitness level.</p>
+                <ul>
+                    <li>Resting heart rate shows your starting point.</li>
+                    <li>Exercise heart rate shows your current effort.</li>
+                    <li>Recovery heart rate shows how quickly you settle down.</li>
+                </ul>
+            </section>
+            <section class="deck-slide">
+                <span class="slide-number">03</span>
+                <p class="slide-kicker">How to check</p>
+                <h3>Three simple ways</h3>
+                <div class="deck-facts">
+                    <div><strong>01</strong><span>Use a fitness watch or heart-rate monitor.</span></div>
+                    <div><strong>02</strong><span>Count your pulse at your wrist or neck for 15 seconds, then multiply by four.</span></div>
+                    <div><strong>03</strong><span>Use the talk test: moderate effort lets you talk, but not sing comfortably.</span></div>
+                </div>
+            </section>
+            <section class="deck-slide">
+                <span class="slide-number">04</span>
+                <p class="slide-kicker">Stay safe</p>
+                <h3>Listen to your body.</h3>
+                <p>Warm up, increase intensity gradually, and cool down after activity. Stop and ask for help if you feel chest pain, severe shortness of breath, dizziness, or unusual discomfort.</p>
+                <div class="deck-takeaway">Consistency matters more than chasing a number.</div>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousSlide" type="button">&#8592; Previous</button>
+            <span id="slideCounter">1 / 4</span>
+            <button class="deck-button" id="nextSlide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic9Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic9DeckTitle">
+        <button class="close-modal" id="closeTopic9Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 9</p>
+            <h2 id="topic9DeckTitle">Basic Steps and Techniques for Doing Aerobic Exercises</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic9-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>BASIC STEPS AND TECHNIQUES<br><span>FOR DOING AEROBIC EXERCISES</span></h3>
+                <p class="topic9-section-title">ESSENTIAL PHASES OF AN AEROBIC ROUTINE</p>
+                <ul>
+                    <li><b>Warm-up:</b> Spend 5 to 10 minutes doing light movements. Like marching in place, shoulder rolls, or gentle step-taps. to increase blood flow and loosen your joints.</li>
+                    <li><b>The Workout:</b> Engage in your chosen continuous activity or dance sequence for 20 to 30 minutes, keeping your breathing steady and controlled.</li>
+                    <li><b>Cool-down:</b> Finish with 5 to 10 minutes of slow walking and static stretches to safely lower your heart rate.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic9-slide">
+                <span class="slide-number">02</span>
+                <h3>Basic Aerobic Dance<br><span>&amp; Step Techniques</span></h3>
+                <ul>
+                    <li><b>Basic Step:</b> Stand tall with feet hip-width apart. Step forward with your right foot, bring your left foot to meet it, then step back with the right foot and return your left foot to the starting position. Alternate your leading leg with each set.</li>
+                    <li><b>V-Step:</b> Start with feet together. Step your right foot to the front-right diagonal, then step your left foot to the front-left diagonal so your feet form a wide "V" shape. Step back to the center one foot at a time.</li>
+                    <li><b>Step-Touch:</b> Step your right foot to the side, then tap your left foot next to your right foot. Reverse the motion by stepping to the left and tapping your right foot.</li>
+                    <li><b>Grapevine:</b> Step to the side with your right foot, cross your left foot behind or behind-ish past your right foot, step right again, and tap your left foot next to your right.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic9-slide">
+                <span class="slide-number">03</span>
+                <h3>Key Techniques For<br><span>Safety And Success</span></h3>
+                <ul>
+                    <li><b>Engage your core:</b> Keep your abdominal muscles gently pulled in toward your spine to protect your lower back during standing movements.</li>
+                    <li><b>Land softly:</b> Roll through your foot from heel to toe when stepping or jumping to absorb impact and protect your joints.</li>
+                    <li><b>Keep knees soft:</b> Avoid locking your knees when standing tall or finishing a step.</li>
+                    <li><b>Check your intensity:</b> You should be breathing faster, but you should still be able to talk in short sentences without gasping for air.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic9Slide" type="button">&#8592; Previous</button>
+            <span id="topic9SlideCounter">1 / 3</span>
+            <button class="deck-button" id="nextTopic9Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic5Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic5DeckTitle">
+        <button class="close-modal" id="closeTopic5Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 5</p>
+            <h2 id="topic5DeckTitle">Health and Fitness Benefits of Aerobic Exercises</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic5-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>HEALTH AND FITNESS BENEFITS<br><span>OF AEROBIC EXERCISES</span></h3>
+                <p>Regular aerobic activity, such as walking, bicycling or swimming, can help you live longer and healthier. Aerobic exercises supports repeated movements in the large muscles in the arms legs and hips. This maximizes the amount of oxygen in the blood increasing blood flow to the muscles, carry away waste products, and allows the body to release endorphins.</p>
+                <p>No matter your age, weight or athletic ability, aerobic activity is good for you. Aerobic activity has many health benefits. As your body adapts to regular aerobic exercise, you'll get stronger and fitter.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">02</span>
+                <h3>Consider the following<br><span>10 ways</span></h3>
+                <p class="topic5-feature-text">Consider the following 10 ways that aerobic activity can help you feel better and enjoy life to the fullest.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">03</span>
+                <p class="slide-kicker">1. Keep excess pounds at bay</p>
+                <h3>Keep excess<br><span>pounds at bay</span></h3>
+                <p>Combined with a healthy diet, aerobic exercise helps you lose weight and keep it off.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">04</span>
+                <p class="slide-kicker">2. Increase your stamina, fitness and strength</p>
+                <h3>Increase your<br><span>stamina, fitness and strength</span></h3>
+                <p>You may feel tired when you first start regular aerobic exercise. But over the long term, you'll enjoy increased stamina and reduced fatigue.</p>
+                <p>You can also gain increased heart and lung fitness and bone and muscle strength over time.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">05</span>
+                <p class="slide-kicker">3. Ward off viral illnesses</p>
+                <h3>Ward off<br><span>viral illnesses</span></h3>
+                <p>Aerobic exercise activates your immune system in a good way. This may leave you less susceptible to viral illnesses, such as colds and the flu.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">06</span>
+                <p class="slide-kicker">4. Reduce your health risks</p>
+                <h3>Reduce your<br><span>health risks</span></h3>
+                <p>Aerobic exercise reduces the risk of many conditions. These conditions include obesity, heart disease, high blood pressure, type 2 diabetes, metabolic syndrome, stroke and certain types of cancer.</p>
+                <p>Weight-bearing aerobic exercises, such as walking, help lower the risk of osteoporosis.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">07</span>
+                <p class="slide-kicker">5. Manage chronic conditions</p>
+                <h3>Manage<br><span>chronic conditions</span></h3>
+                <p>Aerobic exercise may help lower blood pressure and control blood sugar. It can reduce pain and improve function in people with arthritis. It can also improve the quality of life and fitness in people who've had cancer. If you have coronary artery disease, aerobic exercise may help you manage your condition.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">08</span>
+                <p class="slide-kicker">6. Strengthen your heart</p>
+                <h3>Strengthen<br><span>your heart</span></h3>
+                <p>A stronger heart doesn't need to beat as fast. A stronger heart also pumps blood more efficiently, which improves blood flow to all parts of your body.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">09</span>
+                <p class="slide-kicker">7. Keep your arteries clear</p>
+                <h3>Keep your<br><span>arteries clear</span></h3>
+                <p>Aerobic exercise boosts your high-density lipoprotein (HDL), the "good," cholesterol, and lowers your low-density lipoprotein (LDL), the "bad," cholesterol. This may result in less buildup of plaques in your arteries.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">10</span>
+                <p class="slide-kicker">8. Boost your mood</p>
+                <h3>Boost<br><span>your mood</span></h3>
+                <p>Aerobic exercise may ease the gloominess of depression, reduce the tension associated with anxiety and promote relaxation. It can improve your mental well-being and your self-esteem. It can also improve your sleep.</p>
+            </section>
+            <section class="deck-slide topic5-slide">
+                <span class="slide-number">11</span>
+                <p class="slide-kicker">9. Stay active and independent as you age</p>
+                <h3>Stay active<br><span>and independent</span></h3>
+                <p>Aerobic exercise keeps your muscles strong, which can help you maintain mobility as you get older. Exercise can also lower the risk of falls and injuries from falls in older adults. And it can improve your quality of life.</p>
+                <p>Aerobic exercise also keeps your mind sharp. Regular physical activity may help protect memory, reasoning, judgment and thinking skills (cognitive function) in older adults. It may also improve cognitive function in children and young adults. It can even help prevent the onset of dementia and improve cognition in people with dementia.</p>
+            </section>
+            <section class="deck-slide topic5-slide topic5-final-slide">
+                <span class="slide-number">12</span>
+                <p class="slide-kicker">10. Live longer</p>
+                <h3><span>Live longer</span></h3>
+                <p>Studies show that people who participate in regular aerobic exercise live longer than those who don't exercise regularly. They may also have a lower risk of dying of all causes, such as heart disease and certain cancers.</p>
+                <p>Aerobic activity has many health benefits. As your body adapts to regular aerobic exercise, you'll get stronger and fitter. Take the first step in becoming healthier and fit, start with small steps and increase the intensity gradually. From there, your halfway through your fitness journey.</p>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic5Slide" type="button">&#8592; Previous</button>
+            <span id="topic5SlideCounter">1 / 12</span>
+            <button class="deck-button" id="nextTopic5Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic1Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic1DeckTitle">
+        <button class="close-modal" id="closeTopic1Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 1</p>
+            <h2 id="topic1DeckTitle">Aerobics for Cardiorespiratory Endurance</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic1-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>Aerobics for Cardiorespiratory<br><span>Endurance</span></h3>
+                <p>Aerobics for cardiorespiratory endurance means doing continuous, rhythmic exercise to train your heart, lungs, and blood vessels to deliver oxygen to your muscles more efficiently, allowing you to exercise longer without getting tired easily.</p>
+                <div class="pulse-mark" aria-hidden="true">♥</div>
+            </section>
+            <section class="deck-slide topic1-slide">
+                <span class="slide-number">02</span>
+                <h3>The Core<br><span>Challenge:</span></h3>
+                <ul class="topic1-points topic1-single-point">
+                    <li><b>The Core Challenge:</b> Aerobic exercise continuously challenges your heart, lungs, blood vessels, and working muscles.</li>
+                </ul>
+                <div class="topic1-word-mark" aria-hidden="true">MOVE</div>
+            </section>
+            <section class="deck-slide topic1-slide topic1-chain-slide">
+                <span class="slide-number">03</span>
+                <h3>The Immediate<br><span>Chain Reaction:</span></h3>
+                <ul class="topic1-points">
+                    <li>Muscles demand an <b>immediate increase in oxygen.</b></li>
+                    <li>The Heart responds by pumping more blood to meet this demand.</li>
+                    <li>Breathing automatically becomes <b>faster and deeper.</b></li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide">
+                <span class="slide-number">04</span>
+                <h3>The Foundation of<br><span>Endurance:</span></h3>
+                <ul class="topic1-points">
+                    <li>Stamina depends entirely on your body's ability to supply oxygen to muscles continuously.</li>
+                    <li>Aerobic exercise maintains this <b>oxygen demand</b> over extended periods.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide">
+                <span class="slide-number">05</span>
+                <h3>Cardiovascular Response<br><span>(The Delivery System)</span></h3>
+                <ul class="topic1-points">
+                    <li><b>Heart Rate:</b> Increases to pump blood faster.</li>
+                    <li><b>Payload:</b> Delivers vital oxygen and nutrients to active tissues.</li>
+                    <li><b>Result:</b> Regular training strengthens the entire cardiovascular network to support prolonged activity.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide">
+                <span class="slide-number">06</span>
+                <h3>Respiratory Response<br><span>(The Exchange System)</span></h3>
+                <ul class="topic1-points">
+                    <li><b>The Trigger:</b> Exercise rapidly increases oxygen needs and spikes carbon dioxide production.</li>
+                    <li><b>The Action:</b> Breathing deepens and accelerates to exchange these gases efficiently.</li>
+                    <li><b>Result:</b> Consistent training trains the respiratory system to handle heavy physical demands comfortably.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide">
+                <span class="slide-number">07</span>
+                <h3>The Process<br><span>of Adaptation</span></h3>
+                <ul class="topic1-points">
+                    <li><b>Beginners:</b> Typically tire quickly during prolonged activity due to unconditioned systems.</li>
+                    <li><b>The Shift:</b> Consistent training prompts the body to transport and use oxygen more efficiently.</li>
+                    <li><b>The Outcome:</b> You can exercise longer, tolerate greater physical demands, and resist fatigue.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide topic1-intensity-slide">
+                <span class="slide-number">08</span>
+                <h3>Managing<br><span>Intensity</span></h3>
+                <ul class="topic1-points">
+                    <li><b>Moderate:</b> Safely increases your heart rate and breathing.</li>
+                    <li><b>Vigorous:</b> Triggers a much stronger cardiovascular and respiratory adaptation.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic1-slide topic1-rule-slide">
+                <span class="slide-number">09</span>
+                <h3>Trainer's Rule<br><span>of Thumb</span></h3>
+                <ul class="topic1-points">
+                    <li>Always start with <b>smaller amounts of activity.</b></li>
+                    <li>Gradually build up your duration, <b>frequency, and intensity</b> over time to allow repeated adaptation.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic1Slide" type="button">&#8592; Previous</button>
+            <span id="topic1SlideCounter">1 / 9</span>
+            <button class="deck-button" id="nextTopic1Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic4Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic4DeckTitle">
+        <button class="close-modal" id="closeTopic4Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 4</p>
+            <h2 id="topic4DeckTitle">Common Types of Aerobic Activities</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic4-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>Walking</h3>
+                <p>A simple, low-impact activity that can improve cardiovascular endurance.</p>
+                <div class="pulse-mark" aria-hidden="true">👟</div>
+            </section>
+            <section class="deck-slide topic4-slide">
+                <span class="slide-number">02</span>
+                <h3>Jogging</h3>
+                <p>A moderate-intensity activity that increases heart rate and builds endurance.</p>
+                <div class="pulse-mark" aria-hidden="true">🏃</div>
+            </section>
+            <section class="deck-slide topic4-slide">
+                <span class="slide-number">03</span>
+                <h3>Running</h3>
+                <p>A higher-intensity form of aerobic exercise that develops cardiovascular fitness.</p>
+                <div class="pulse-mark" aria-hidden="true">💨</div>
+            </section>
+            <section class="deck-slide topic4-slide">
+                <span class="slide-number">04</span>
+                <h3>Dancing</h3>
+                <p>Activities such as aerobic dance or Zumba can improve cardiovascular endurance while being enjoyable.</p>
+                <div class="pulse-mark" aria-hidden="true">💃</div>
+            </section>
+            <section class="deck-slide topic4-slide">
+                <span class="slide-number">05</span>
+                <h3>Jumping rope</h3>
+                <p>Raises the heart rate quickly and improves coordination and endurance.</p>
+                <div class="pulse-mark" aria-hidden="true">➰</div>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic4Slide" type="button">&#8592; Previous</button>
+            <span id="topic4SlideCounter">1 / 5</span>
+            <button class="deck-button" id="nextTopic4Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic3Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic3DeckTitle">
+        <button class="close-modal" id="closeTopic3Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 3</p>
+            <h2 id="topic3DeckTitle">Comparison Between Aerobic and Anaerobic Workouts</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic3-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>Comparison Between Aerobic<br><span>and Anaerobic Workouts</span></h3>
+                <p>Aerobic and anaerobic workouts are both forms of physical activity, but they differ in intensity, duration, and how the body produces energy.</p>
+                <div class="pulse-mark" aria-hidden="true">⚡</div>
+            </section>
+            <section class="deck-slide topic3-slide">
+                <span class="slide-number">02</span>
+                <h3>Aerobic<span> Workouts</span></h3>
+                <p>Use oxygen to produce energy and are generally performed at low to moderate intensity for longer periods.</p>
+                <ul>
+                    <li><b>Main Goal:</b> Improve cardiovascular endurance and help the heart and lungs work efficiently.</li>
+                    <li><b>Examples:</b> Walking, jogging, swimming, cycling, and dancing.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic3-slide">
+                <span class="slide-number">03</span>
+                <h3>Anaerobic<span> Workouts</span></h3>
+                <p>Usually short, high-intensity activities that rely mainly on stored energy in the muscles.</p>
+                <ul>
+                    <li><b>Main Goal:</b> Developing muscle strength, power, and speed.</li>
+                    <li><b>Examples:</b> Sprinting, heavy resistance exercises, jumping, and other short bursts of intense activity.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic3Slide" type="button">&#8592; Previous</button>
+            <span id="topic3SlideCounter">1 / 3</span>
+            <button class="deck-button" id="nextTopic3Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic7Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic7DeckTitle">
+        <button class="close-modal" id="closeTopic7Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 7</p>
+            <h2 id="topic7DeckTitle">Safety Guidelines for Aerobic Exercise Routines</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic7-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>SAFETY GUIDELINES FOR<br><span>AEROBIC EXERCISE ROUTINES</span></h3>
+                <p class="topic7-section-title"><b>Before Exercise</b></p>
+                <ul>
+                    <li><b>Prepare properly:</b> Consider your fitness level, previous injuries, and health conditions. Wear comfortable clothing and well-fitting shoes.</li>
+                    <li><b>Warm up:</b> Begin with a proper warm-up to gradually prepare the muscles and body for exercise.</li>
+                    <li><b>Check your environment:</b> Choose a safe area free from obstacles and make sure exercise equipment is suitable and in good condition.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic7-slide">
+                <span class="slide-number">02</span>
+                <h3>SAFETY GUIDELINES FOR<br><span>AEROBIC EXERCISE ROUTINES</span></h3>
+                <p class="topic7-section-title"><b>During Exercise</b></p>
+                <ul>
+                    <li><b>Exercise gradually:</b> Increase the intensity, frequency, and duration according to your ability. Avoid exercising too hard or too fast.</li>
+                    <li><b>Stay hydrated and take breaks:</b> Drink enough water and rest when needed, especially during prolonged exercise or hot and humid weather.</li>
+                    <li><b>Listen to your body:</b> Stop if you experience chest pain, severe shortness of breath, dizziness, nausea, unusual fatigue, or significant muscle or joint pain.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic7-slide">
+                <span class="slide-number">03</span>
+                <h3>SAFETY GUIDELINES FOR<br><span>AEROBIC EXERCISE ROUTINES</span></h3>
+                <p class="topic7-section-title"><b>After Exercise</b></p>
+                <ul>
+                    <li><b>Cool down:</b> Gradually reduce the intensity of the exercise and perform gentle stretches.</li>
+                    <li><b>Rehydrate and recover:</b> Drink water after exercising and give your body enough time to recover.</li>
+                    <li><b>Do not ignore pain:</b> If pain or concerning symptoms continue, stop exercising and seek appropriate medical advice.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic7Slide" type="button">&#8592; Previous</button>
+            <span id="topic7SlideCounter">1 / 3</span>
+            <button class="deck-button" id="nextTopic7Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="danDeck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="danDeckTitle">
+        <button class="close-modal" id="closeDanDeck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 2</p>
+            <h2 id="danDeckTitle">Definition and Nature of Aerobic Exercise</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide dan-slide dan-slide-definition is-active">
+                <span class="slide-number">01</span>
+                <h3>DEFINITION AND NATURE<br><span>OF AEROBIC EXERCISE</span></h3>
+                <p class="dan-paragraph">Aerobic exercise is a physical activity that uses large muscle groups in your body. This type of exercise is usually rhythmic and repetitive. You can adjust the intensity of your workout, which is how hard your body works during this type of exercise.</p>
+                <span class="dan-definition-mark" aria-hidden="true">↻</span>
+            </section>
+            <section class="deck-slide dan-slide dan-slide-nature">
+                <span class="slide-number">02</span>
+                <h3>Nature of<br><span>Aerobic Exercise</span></h3>
+                <ul class="dan-nature-points">
+                    <li><b>Meaning of Aerobic:</b> The term aerobic means with oxygen.</li>
+                    <li><b>Oxygen Utilization:</b> When you practice aerobic exercise, your breathing controls the amount of oxygen that reaches your muscles to help you burn energy and move.</li>
+                    <li><b>Cardiovascular Response:</b> Aerobic exercises increase your heart rate and how much oxygen your body uses.</li>
+                </ul>
+                <span class="dan-nature-mark" aria-hidden="true">♥</span>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousDanSlide" type="button">&#8592; Previous</button>
+            <span id="danSlideCounter">1 / 2</span>
+            <button class="deck-button" id="nextDanSlide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="PRPDeck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic6DeckTitle">
+        <button class="close-modal" id="closeTopic6Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 6</p>
+            <h2 id="topic6DeckTitle">Potential Risks and Precautions</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic6-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>POTENTIAL RISKS<br><span>AND PRECAUTIONS</span></h3>
+                <ul>
+                    <li><b>Muscle strains and sprains:</b> Repetitive, sudden, or improperly performed movements can overstretch muscles, tendons, or ligaments and cause injury.</li>
+                    <li><b>Joint injuries:</b> High-impact movements such as jumping can place repeated stress on the <b>knees, ankles, hips, and lower back</b>, especially when performed frequently or with improper technique.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic6-slide">
+                <span class="slide-number">02</span>
+                <h3>WATCH YOUR<br><span>LIMITS</span></h3>
+                <ul>
+                    <li><b>Overexertion and excessive fatigue:</b> Exercising beyond one's current fitness level can cause extreme tiredness and may reduce coordination and performance. Beginners are particularly encouraged to increase exercise intensity gradually.</li>
+                    <li><b>Dehydration:</b> Aerobic exercise causes fluid loss through sweating. Prolonged exercise, particularly in hot conditions, can increase the risk of dehydration, which may lead to weakness, dizziness, and reduced exercise performance.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic6-slide">
+                <span class="slide-number">03</span>
+                <h3>ENVIRONMENT<br><span>MATTERS</span></h3>
+                <ul>
+                    <li><b>Heat-related illness:</b> Performing aerobics in hot or humid environments can increase the risk of <b>heat exhaustion and heat stroke</b>. Symptoms may include heavy sweating, weakness, nausea, dizziness, and shortness of breath.</li>
+                    <li><b>Falls and loss of balance:</b> Fast-paced routines, sudden changes in direction, slippery surfaces, or fatigue can increase the likelihood of stumbling, falling, and sustaining injuries.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic6-slide">
+                <span class="slide-number">04</span>
+                <h3>KNOW WHEN<br><span>TO STOP</span></h3>
+                <ul>
+                    <li><b>Breathing difficulties:</b> Vigorous aerobic exercise increases the body's demand for oxygen and can cause heavy breathing or shortness of breath, particularly when the intensity is too high for an individual's fitness level.</li>
+                    <li><b>Cardiovascular complications:</b> Aerobic exercise is generally safe and beneficial for most people, but <b>very vigorous exercise can temporarily increase the risk of serious cardiovascular events in susceptible individuals</b>, particularly those with underlying heart conditions.</li>
+                </ul>
+                <div class="deck-takeaway">Exercise safely, increase intensity gradually, and listen to your body.</div>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic6Slide" type="button">&#8592; Previous</button>
+            <span id="topic6SlideCounter">1 / 4</span>
+            <button class="deck-button" id="nextTopic6Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<div class="deck-modal" id="topic8Deck" aria-hidden="true">
+    <div class="deck-content" role="dialog" aria-modal="true" aria-labelledby="topic8DeckTitle">
+        <button class="close-modal" id="closeTopic8Deck" type="button" aria-label="Close presentation">&times;</button>
+        <div class="deck-heading">
+            <p class="section-kicker">Topic 8</p>
+            <h2 id="topic8DeckTitle">Recommended Frequency for Aerobic Training</h2>
+        </div>
+        <div class="deck-slides">
+            <section class="deck-slide topic8-slide is-active">
+                <span class="slide-number">01</span>
+                <h3>RECOMMENDED FREQUENCY<br><span>FOR AEROBIC TRAINING</span></h3>
+                <p class="topic8-section-title"><b>For adults (18–64 years)</b></p>
+                <ul>
+                    <li><b>Moderate-intensity aerobic exercise:</b> 150–300 minutes per week.</li>
+                    <li><b>Example:</b> 30–60 minutes, 5 days a week.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic8-slide">
+                <span class="slide-number">02</span>
+                <h3>VIGOROUS<br><span>TRAINING</span></h3>
+                <ul>
+                    <li><b>Vigorous-intensity aerobic exercise:</b> 75–150 minutes per week.</li>
+                    <li><b>Example:</b> 25–30 minutes, 3–5 days a week.</li>
+                    <li>You can also combine moderate- and vigorous-intensity activities.</li>
+                </ul>
+            </section>
+            <section class="deck-slide topic8-slide">
+                <span class="slide-number">03</span>
+                <h3>START SMALL.<br><span>BUILD GRADUALLY.</span></h3>
+                <p>If you're inactive, start with smaller amounts and gradually increase frequency, duration, and intensity.</p>
+                <div class="deck-takeaway">Consistency and gradual progress help make aerobic training sustainable.</div>
+            </section>
+        </div>
+        <div class="deck-controls">
+            <button class="deck-button" id="previousTopic8Slide" type="button">&#8592; Previous</button>
+            <span id="topic8SlideCounter">1 / 3</span>
+            <button class="deck-button" id="nextTopic8Slide" type="button">Next &#8594;</button>
+        </div>
+    </div>
+</div>
+
+<script src="PE.js" defer></script>
+
+</body>
+</html>
