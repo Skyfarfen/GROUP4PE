@@ -208,7 +208,7 @@ function spinPrizeGame() {
             name: "Mentos",
             image: "mentos.png",
             value: 0,
-            chance: 50,
+            chance: 45,
             min: 1,
             max: 1
         },  
@@ -216,7 +216,13 @@ function spinPrizeGame() {
             name: "₱5",
             image: "5peso.png",
             value: 5,
-            chance: 45
+            chance: 40
+        },
+        {
+            name: "₱5",
+            image: "10peso.png",
+            value: 10,
+            chance: 10
         },
         {
             name: "₱20",
