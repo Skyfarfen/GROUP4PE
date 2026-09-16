@@ -235,12 +235,14 @@ function spinPrizeGame() {
     function getRandomPrize() {
         const random = Math.random() * 100;
 
-        if (random < 50) {
+        if (random < 45) {
             return prizes[0];
-        } else if (random < 95) {
+        } else if (random < 85) {
             return prizes[1];
-        } else {
+        } else if (random < 95) {
             return prizes[2];
+        } else {
+            return prizes[3];
         }
     }
 
