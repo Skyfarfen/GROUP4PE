@@ -246,18 +246,6 @@ function spinPrizeGame() {
         }
     }
 
-    function getRandomPrize() {
-        const random = Math.random() * 100;
-
-        if (random < 50) {
-            return prizes[0];
-        } else if (random < 95) {
-            return prizes[1];
-        } else {
-            return prizes[2];
-        }
-    }
-
     function getMentosAmount(prize) {
         if (prize.name !== "Mentos") return 1;
 
