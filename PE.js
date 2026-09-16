@@ -219,7 +219,7 @@ function spinPrizeGame() {
             chance: 40
         },
         {
-            name: "₱5",
+            name: "₱10",
             image: "10peso.png",
             value: 10,
             chance: 10
